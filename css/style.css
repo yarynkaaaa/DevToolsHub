@@ -1,0 +1,466 @@
+@import url('fonts.css');
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+address {
+    font-style: normal;
+}
+
+button {
+    cursor: pointer;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+
+}
+
+/* HEADER */
+.header {
+    background-color: #222;
+
+}
+
+.header a {
+    display: inline-block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.header-menu-link{
+    text-decoration: none;
+    color: #e8e8e8;
+    font-family: "Manrope Regular";
+    font-size: 14px;
+    transition: 0.3s;
+}
+.header-container {
+    align-items: center;
+}
+
+.header-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+}
+
+.header-logo {
+    font-family: "Poppins Bold";
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.17;
+    color: #e8e8e8;
+}
+
+.header-logo-color {
+    display: inline-block;
+    padding: 3px 6px;
+    border: 2px solid #2f4f2f;
+    background-color: #2f4f2f;
+    color: #e8e8e8;
+    border-radius: 5px;
+}
+
+.header-menu {
+    display: flex;
+    gap: 34px;
+}
+
+.header-menu-link {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #e8e8e8;
+}
+
+.header-menu-link:hover,
+.header-menu-link:focus {
+    color: #2f4f2f;
+}
+/* Вирівнювання кнопок */
+.buttons-header {
+    display: flex;
+    align-items: center;
+    background-color: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.nav-btns {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+
+.buttons-link {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons-link:hover {
+    background-color: #2f4f2f;
+    border-radius: 4px;
+    transform: scale(1.05);
+}
+
+/* Розмір кнопки-іконки */
+.icon-btn {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* Розмір іконок */
+.icon-btn img {
+    width: 34px;
+    height: 34px;
+}
+
+/* -----------------------------HERO-------------------- */
+.hero {
+    padding-top: 118px;
+    padding-bottom: 160px;
+    background: linear-gradient(135deg, #3a6c4c, #1f3324);
+        color: white;
+}
+
+.hero .container {
+    margin: 0 auto;
+}
+
+.hero-title {
+    font-family: "Mulish ExtraBold";
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 1.07;
+    text-align: center;
+    color: #fff;
+    max-width: 584px;
+    margin: 0 auto;
+    margin-bottom: 14px;
+}
+.hero-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 38px;
+}
+.hub2-1{
+    display: inline-block;
+    justify-content: center;
+        padding: 5px 10px;
+        border: 1px solid #222;
+        background-color: #222;
+        color: #fff;
+        border-radius: 8px;
+        font-size: 25px;
+        font-family: "Poppins Bold";
+}
+.hub{
+display: inline-block;
+    padding: 3px 6px;
+    border: 2px solid #2f4f2f;
+    background-color: #2f4f2f;
+    color: #e8e8e8;
+    border-radius: 5px;
+}
+.intro-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1.8;
+    font-family: "Manrope Regular";
+    font-size: 1.2rem;
+    color: #222;
+    margin-bottom: 36px;
+}
+.intro-text h2{
+    font-size: 1.5rem;
+    color: #222;
+}
+.button-order {
+    display: block;
+    padding: 25px;
+    font-family: "Mulish ExtraBold";
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    margin: 0 auto;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #222, #2a472a);
+    cursor: pointer;
+    border: none;
+
+}
+.button-order:hover{
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    
+        }
+    
+        .button-order:active {
+            transform: translateY(2px);
+            /* Кнопка опускається при натисканні */
+        }
+
+/* -----------------------BENEFITS---------------------------------- */
+
+.benefits {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.benefits-title {
+    /* display: none; */
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    color: #2e2f42;
+}
+
+.benefits-list {
+    display: flex;
+    gap: 24px;
+}
+
+.benefits-item {
+    flex-basis: calc((100% - 72px)/4);
+}
+
+.benefits-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+}
+
+.benefits-item-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+.people-text {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+/* ----------------------TEAM-------------------------- */
+.team {
+    background-color: #f4f4fd;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    margin-bottom: 120px;
+}
+
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    color: #2e2f42;
+    margin-bottom: 72px;
+}
+
+.team-list {
+    display: flex;
+    gap: 24px;
+}
+
+.team-item {
+    background-color: #FFFFFF;
+    border-radius: 0 0 4px 4px;
+    padding-bottom: 32px;
+    width: calc((100% - 48px) / 3);
+}
+
+.team-image {
+    margin-bottom: 32px;
+}
+
+.team-people {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    margin-bottom: 8px;
+}
+
+.team-item-text {
+    font-weight: 400;
+    font-size: 16px;
+
+    /* line-height: 24px; */
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #434455;
+}
+
+/* --------------PORTFOLIO---------------------- */
+.portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+}
+
+.portfolio-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    color: #2e2f42;
+    margin-bottom: 72px;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+
+}
+
+.portfolio-item {
+    width: calc((100% - 48px) / 3);
+
+
+}
+
+.portfolio-image {}
+
+.portfolio-discribe {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    margin-bottom: 8px;
+}
+
+.portfolio-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+    padding-left: 16px;
+}
+
+.portfolio-item-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    padding-bottom: 32px;
+    padding-left: 16px;
+
+}
+
+/* -----------FOOTER------------------ */
+.footer {
+    background-color: #2e2f42;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.footer-link {
+    display: inline-block;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+    margin-bottom: 16px;
+
+}
+
+.footer-link-color {
+    color: #f4f4fd;
+}
+
+.footer-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    max-width: 264px;
+}
