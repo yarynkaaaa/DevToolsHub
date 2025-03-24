@@ -456,7 +456,8 @@ order: 2;
     border-radius: 12px;
     margin: 20px auto;
     max-width: 600px;
-    border: 3px solid #2f4f2f94;
+    background: linear-gradient(135deg, #365a36, #263f26);
+    border: 3px solid #2222223c;
     transition: box-shadow 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -464,13 +465,11 @@ order: 2;
     box-shadow: 0 0 20px 8px rgba(66, 126, 66, 0.7);
     /* Неонова тінь */
     border-color: #3a6c4c;
-    transform: scale(1.02);
-    /* Збільшення при наведенні */
 }
 
 .form h2 {
     font-family: "Manrope Regular", bold;
-    color: #2f4f2f;
+    color: #f4f4f4;
     font-size: 22px;
     margin-bottom: 20px;
     text-align: center;
@@ -491,7 +490,7 @@ order: 2;
     display: block;
     margin-bottom: 8px;
     font-family: "Mulish Bold";
-    color: #1f3324;
+    color: #222222;
     font-weight: bold;
 }
 
@@ -502,7 +501,7 @@ order: 2;
     /* Розмір з урахуванням відступів */
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #2f4f2f;
+    border: 2px solid #e8e8e8;
     border-radius: 4px;
     font-family: "Manrope Regular", bold;
     font-size: 16px;
@@ -516,7 +515,7 @@ order: 2;
 
 .form button {
     font-family: "Mulish ExtraBold";
-    background-color: #2f4f2f;
+    background: linear-gradient(45deg, #222, #2a472a);
     color: white;
     padding: 14px 24px;
     border: none;
