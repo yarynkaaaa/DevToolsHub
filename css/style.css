@@ -433,6 +433,7 @@ order: 2;
     height: 15px;
     color: #f4f4f4;
     opacity: 0.5;
+    justify-content: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -447,67 +448,155 @@ order: 2;
               height: 300px;
           }
 }
-/* --------------PORTFOLIO---------------------- */
-.portfolio {
-    padding-top: 120px;
-    padding-bottom: 120px;
 
-}
-
-.portfolio-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-align: center;
-    text-transform: capitalize;
-    color: #2e2f42;
-    margin-bottom: 72px;
-}
-
-.portfolio-list {
+/* ----------------FORM-------------------- */
+.form {
     display: flex;
-    flex-wrap: wrap;
-    gap: 48px 24px;
-
+    padding: 40px;
+    border-radius: 12px;
+    margin: 20px auto;
+    max-width: 600px;
+    border: 3px solid #2f4f2f94;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
 }
 
-.portfolio-item {
-    width: calc((100% - 48px) / 3);
-
-
+.form:hover {
+    box-shadow: 0 0 20px 8px rgba(66, 126, 66, 0.7);
+    /* Неонова тінь */
+    border-color: #3a6c4c;
+    transform: scale(1.02);
+    /* Збільшення при наведенні */
 }
 
-.portfolio-image {}
-
-.portfolio-discribe {
-    padding: 32px 16px;
-    border: 1px solid #e7e9fc;
-    border-top: none;
-    margin-bottom: 8px;
+.form h2 {
+    font-family: "Manrope Regular", bold;
+    color: #2f4f2f;
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    /* Тінь тексту */
 }
 
-.portfolio-subtitle {
+.form p {
+    font-family: "Manrope Regular", bold;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    margin-bottom: 8px;
-    padding-left: 16px;
-}
-
-.portfolio-item-text {
-    font-weight: 400;
     font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-    padding-bottom: 32px;
-    padding-left: 16px;
-
+    color: #222;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
+.form label {
+    display: block;
+    margin-bottom: 8px;
+    font-family: "Mulish Bold";
+    color: #1f3324;
+    font-weight: bold;
+}
+
+.form input[type="email"],
+.form input[type="text"],
+.form select {
+    width: calc(100% - 22px);
+    /* Розмір з урахуванням відступів */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #2f4f2f;
+    border-radius: 4px;
+    font-family: "Manrope Regular", bold;
+    font-size: 16px;
+}
+
+.form select[multiple] {
+    height: 100px;
+    /* Висота для списку з множинним вибором */
+}
+
+
+.form button {
+    font-family: "Mulish ExtraBold";
+    background-color: #2f4f2f;
+    color: white;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.form button:hover {
+    background-color: #3a6c4c;
+    transform: scale(1.05);
+    /* Збільшення кнопки при наведенні */
+}
+
+.form button:active {
+    transform: scale(0.95);
+    /* Ефект натискання */
+}
+
+.form a {
+    color: #3a6c4c;
+    text-decoration: none;
+}
+
+.form a:hover {
+    text-decoration: underline;
+}
+
+.form p:last-child {
+    font-size: 14px;
+    color: #888;
+    margin-top: 10px;
+}
+
+/* ---------------SCROLL---------------- */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #2f4f2f;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1000;
+}
+
+.scroll-to-top img {
+    width: 24px;
+    height: 24px;
+    fill: #f4f4f4;
+}
+
+.scroll-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media (max-width: 768px) {
+    .scroll-to-top {
+        bottom: 10px;
+        right: 10px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .scroll-to-top img {
+        width: 18px;
+        height: 18px;
+    }
+}
 /* -----------FOOTER------------------ */
 .footer {
     background-color: #222;

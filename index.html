@@ -293,7 +293,7 @@
                 </div>
             </section>
 
-            <section class="portfolio">
+            <section class="form">
                 <div class="container">
                     <form id="subscription-form">
                         <h2>Будьте в курсі останніх DevTools оновлень!</h2>
@@ -304,15 +304,17 @@
                         <label for="email">Email:</label>
                         <input type="email" id="email" name="email" required />
 
-                        <label for="name">Ім'я (необов'язково):</label>
+                        <label for="name">Ім'я:</label>
                         <input type="text" id="name" name="name" />
 
-                        <label>Виберіть ваші улюблені DevTools (необов'язково):</label>
+                        <label>Виберіть ваш професійний напрямок:</label>
                         <select id="devtools" name="devtools" multiple>
-                            <option value="chrome-devtools">Chrome DevTools</option>
-                            <option value="vs-code">VS Code</option>
-                            <option value="figma">Figma</option>
-                            <option value="webpack">Webpack</option>
+                            <option value="chrome-devtools">Web designer</option>
+                            <option value="vs-code">Front-end developer</option>
+                            <option value="figma">Back-end developer</option>
+                            <option value="webpack">Fullstack developer</option>
+                            <option value="webpack">QA-tester</option>
+                            <option value="webpack">Cyber specialist</option>
                         </select>
 
                         <button type="submit">Підписатися</button>
@@ -336,6 +338,9 @@
                 </p>
             </div>
         </footer>
+        <button id="scrollToTop" class="scroll-to-top">
+            <img src="./icons/up.svg" alt="up" />
+        </button>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="./js/script.js"></script>
     </body>
