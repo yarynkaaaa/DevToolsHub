@@ -11,8 +11,16 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=chevron_right"
+        />
         <link
             href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
             rel="stylesheet"
@@ -78,176 +86,257 @@
                     <button type="button" class="button-order">Переглянути ресурси</button>
                 </div>
             </section>
-            <section id="benefits" class="benefits">
-                <div class="container">
-                    <h2 class="benefits-title visually-hidden">Benefits</h2>
-                    <ul class="benefits-list">
-                        <li class="benefits-item">
-                            <h3 class="benefits-subtitle">Strategy</h3>
-                            <p class="benefits-item-text">
-                                Our goal is to identify the business problem to walk away with the
-                                perfect and creative solution.
-                            </p>
-                        </li>
-                        <li class="benefits-item">
-                            <h3 class="benefits-subtitle">Punctuality</h3>
-                            <p class="benefits-item-text">
-                                Bring the key message to the brand's audience for the best price
-                                within the shortest possible time.
-                            </p>
-                        </li>
-                        <li class="benefits-item">
-                            <h3 class="benefits-subtitle">Diligence</h3>
-                            <p class="benefits-item-text">
-                                Research and confirm brands with the strongest digital growth
-                                opportunities and minimize risk.
-                            </p>
-                        </li>
-                        <li class="benefits-item">
-                            <h3 class="benefits-subtitle">Technologies</h3>
-                            <p class="benefits-item-text">
-                                Design practice focused on digital experiences. We bring forth a
-                                deep passion for problem-solving.
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section class="team">
-                <div class="container">
-                    <h2 class="team-title">Our Team</h2>
-                    <ul class="team-list">
-                        <li class="team-item">
-                            <img
-                                src="./images/mark.jpg"
-                                alt="Mark Guerrero"
-                                width="264"
-                                class="team-image"
-                            />
-                            <div class="people-text">
-                                <h3 class="team-people">Mark Guerrero</h3>
-                                <p class="team-item-text">Product Designer</p>
+
+            <section id="information" class="information">
+                <div class="container information-container">
+                    <h2 class="information-title">Категорії ресурсів</h2>
+                    <ul class="information-list">
+                        <li class="information-item">
+                            <div class="information-icon-left">
+                                <img
+                                    src="./icons/computer-grey.svg"
+                                    alt="Комп'ютер"
+                                    class="icon-position-left"
+                                />
+                            </div>
+                            <div class="information-image-text">
+                                <h3 class="information-subtitle">
+                                    Редактори та середовища розробки
+                                </h3>
+                                <p class="information-item-text">
+                                    Популярні IDE та текстові редактори: VS Code, JetBrains, Sublime
+                                    Text.
+                                </p>
                             </div>
                         </li>
-                        <li class="team-item">
-                            <img
-                                src="./images/tom.jpg"
-                                alt="Tom Ford"
-                                width="264"
-                                class="team-image"
-                            />
-                            <div class="people-text">
-                                <h3 class="team-people">Tom Ford</h3>
-                                <p class="team-item-text">Frontend Developer</p>
+                        <li class="information-item">
+                            <div class="information-icon-right">
+                                <img
+                                    src="./icons/document-grey.svg"
+                                    alt="Документ"
+                                    class="icon-position-left"
+                                />
+                            </div>
+                            <div class="information-image-text">
+                                <h3 class="information-subtitle">
+                                    Навчальні курси та документація
+                                </h3>
+                                <p class="information-item-text">
+                                    Онлайн-курси, корисні книги, технічні гайди, ресурси для
+                                    практичного застосування.
+                                </p>
                             </div>
                         </li>
-                        <li class="team-item">
-                            <img
-                                src="./images/camila.jpg"
-                                alt="Camila Garcia"
-                                width="264"
-                                class="team-image"
-                            />
-                            <div class="people-text">
-                                <h3 class="team-people">Camila Garcia</h3>
-                                <p class="team-item-text">Marketing</p>
+                        <li class="information-item">
+                            <div class="information-icon-right">
+                                <img
+                                    src="./icons/code-grey.svg"
+                                    alt="Код"
+                                    class="icon-position-left"
+                                />
+                            </div>
+                            <div class="information-image-text">
+                                <h3 class="information-subtitle">Плагіни та розширення</h3>
+                                <p class="information-item-text">
+                                    Практичні інструменти для покращення якості коду та спрощення
+                                    розробки.
+                                </p>
                             </div>
                         </li>
-                        <li class="team-item">
-                            <img
-                                src="./images/daniel.jpg"
-                                alt="Daniel Wilson"
-                                width="264"
-                                class="team-image"
-                            />
-                            <div class="people-text">
-                                <h3 class="team-people">Daniel Wilson</h3>
-                                <p class="team-item-text">UI Designer</p>
+                        <li class="information-item">
+                            <div class="information-icon-left">
+                                <img
+                                    src="./icons/bolt-grey.svg"
+                                    alt="Продуктивність"
+                                    class="icon-position-left"
+                                />
+                            </div>
+                            <div class="information-image-text">
+                                <h3 class="information-subtitle">Інструменти продуктивності</h3>
+                                <p class="information-item-text">
+                                    Сервіси для керування кодом, спільної роботи та організації
+                                    процесів.
+                                </p>
                             </div>
                         </li>
                     </ul>
                 </div>
             </section>
+
+            <section class="profession">
+                <div class="container swiper profession-container">
+                    <h2 class="profession-title">Ресурси для твоєї професії</h2>
+                    <div class="card-wrapper">
+                        <ul class="profession-list swiper-wrapper">
+                            <li class="profession-item swiper-slide">
+                                <a href="" class="profession-link"
+                                    ><img
+                                        src="./img/web-designer.png"
+                                        alt="Web designer"
+                                        class="profession-image"
+                                    />
+
+                                    <h3 class="profession-subtitle">Web designer</h3>
+                                    <p class="profession-item-text">
+                                        Для створення візуально привабливих та зручних для
+                                        користувача веб-сайтів:
+                                        <b>Figma, Adobe XD, Dribbble, Behance</b>.
+                                    </p>
+                                    <button class="card-button material-symbols-rounded">
+                                        chevron_right
+                                    </button>
+                                </a>
+                            </li>
+                            <li class="profession-item swiper-slide">
+                                <a href="" class="profession-link"
+                                    ><img
+                                        src="./img/front-developer.png"
+                                        alt="Front-end developer"
+                                        class="profession-image"
+                                    />
+
+                                    <h3 class="profession-subtitle">Front-end developer</h3>
+                                    <p class="profession-item-text">
+                                        Розробка інтерфейсу кормстувача:
+                                        <b
+                                            >HTML, CSS, JavaScript, MDN Web Docs, CSS Tricks,
+                                            FreeCodeCamp, Frontend Mentor</b
+                                        >
+                                        .
+                                    </p>
+                                    <button class="card-button material-symbols-rounded">
+                                        chevron_right
+                                    </button>
+                                </a>
+                            </li>
+                            <li class="profession-item swiper-slide">
+                                <a href="" class="profession-link"
+                                    ><img
+                                        src="./img/Back_end_developer.jpg"
+                                        alt="Back-end developer"
+                                        class="profession-image"
+                                    />
+
+                                    <h3 class="profession-subtitle">Back-end developer</h3>
+                                    <p class="profession-item-text">
+                                        Робота з серверною частиною сайтів, керування базами даних
+                                        та логікою програми:
+                                        <b>Node.js Docs, PHP.net, PostgreSQL, Laravel</b> .
+                                    </p>
+                                    <button class="card-button material-symbols-rounded">
+                                        chevron_right
+                                    </button>
+                                </a>
+                            </li>
+                            <li class="profession-item swiper-slide">
+                                <a href="" class="profession-link"
+                                    ><img
+                                        src="./img/fullstack.png"
+                                        alt="Fullstack developer"
+                                        class="profession-image"
+                                    />
+
+                                    <h3 class="profession-subtitle">Fullstack developer</h3>
+                                    <p class="profession-item-text">
+                                        Поєднання як фронтенду, так і бекенду, для створення
+                                        повноцінних веб-додатків:
+                                        <b>The Odin Project, Fullstack Open, Roadmap.sh</b>.
+                                    </p>
+                                    <button class="card-button material-symbols-rounded">
+                                        chevron_right
+                                    </button>
+                                </a>
+                            </li>
+                            <li class="profession-item swiper-slide">
+                                <a href="" class="profession-link"
+                                    ><img
+                                        src="./img/qa-tester.png"
+                                        alt="QA-tester"
+                                        class="profession-image"
+                                    />
+
+                                    <h3 class="profession-subtitle">QA-tester</h3>
+                                    <p class="profession-item-text">
+                                        Тестування програмного забезпечення, перевірка його якості
+                                        та функціональності:
+                                        <b>ISTQB, Test Automation University, Guru99</b>.
+                                    </p>
+                                    <button class="card-button material-symbols-rounded">
+                                        chevron_right
+                                    </button>
+                                </a>
+                            </li>
+                            <li class="profession-item swiper-slide">
+                                <a href="" class="profession-link"
+                                    ><img
+                                        src="./img/cyber.jpg"
+                                        alt="Cyber specialist"
+                                        class="profession-image"
+                                    />
+
+                                    <h3 class="profession-subtitle">Cyber specialist</h3>
+                                    <p class="profession-item-text">
+                                        Захист системи від атак хакерів, аналіз загроз та
+                                        впровадження заходів безпеки:
+                                        <b>Hack The Box, OWASP, Cybrary, TryHackMe</b>.
+                                    </p>
+                                    <button class="card-button material-symbols-rounded">
+                                        chevron_right
+                                    </button>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </section>
+
             <section class="portfolio">
                 <div class="container">
-                    <h2 class="portfolio-title">Our Portfolio</h2>
-                    <ul class="portfolio-list">
-                        <li class="portfolio-item">
-                            <img src="./images/app.jpg" alt="Banking App" class="portfolio-image" />
-                            <div class="portfolio-discribe">
-                                <h3 class="portfolio-subtitle">Banking App</h3>
-                                <p class="portfolio-item-text">App</p>
-                            </div>
-                        </li>
-                        <li class="portfolio-item">
-                            <img
-                                src="./images/pay.jpg"
-                                alt="Cashless Payment"
-                                class="portfolio-image"
-                            />
-                            <div class="portfolio-discribe">
-                                <h3 class="portfolio-subtitle">Cashless Payment</h3>
-                                <p class="portfolio-item-text">Marketing</p>
-                            </div>
-                        </li>
-                        <li class="portfolio-item">
-                            <img
-                                src="./images/devices.jpg"
-                                alt="Meditation App"
-                                class="portfolio-image"
-                            />
-                            <div class="portfolio-discribe">
-                                <h3 class="portfolio-subtitle">Meditation App</h3>
-                                <p class="portfolio-item-text">App</p>
-                            </div>
-                        </li>
-                        <li class="portfolio-item">
-                            <img
-                                src="./images/taxi.jpg"
-                                alt="Taxi Service"
-                                class="portfolio-image"
-                            />
-                            <div class="portfolio-discribe">
-                                <h3 class="portfolio-subtitle">Taxi Service</h3>
-                                <p class="portfolio-item-text">Marketing</p>
-                            </div>
-                        </li>
-                        <li class="portfolio-item">
-                            <img
-                                src="./images/screen.jpg"
-                                alt="Screen Illustrations"
-                                class="portfolio-image"
-                            />
-                            <div class="portfolio-discribe">
-                                <h3 class="portfolio-subtitle">Screen Illustrations</h3>
-                                <p class="portfolio-item-text">Design</p>
-                            </div>
-                        </li>
-                        <li class="portfolio-item">
-                            <img
-                                src="./images/girlsmile.jpg"
-                                alt="Online Courses"
-                                class="portfolio-image"
-                            />
-                            <div class="portfolio-discribe">
-                                <h3 class="portfolio-subtitle">Online Courses</h3>
-                                <p class="portfolio-item-text">Marketing</p>
-                            </div>
-                        </li>
-                    </ul>
+                    <form id="subscription-form">
+                        <h2>Будьте в курсі останніх DevTools оновлень!</h2>
+                        <p>
+                            Отримайте ексклюзивні поради, ресурси та оновлення прямо на вашу пошту.
+                        </p>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required />
+
+                        <label for="name">Ім'я (необов'язково):</label>
+                        <input type="text" id="name" name="name" />
+
+                        <label>Виберіть ваші улюблені DevTools (необов'язково):</label>
+                        <select id="devtools" name="devtools" multiple>
+                            <option value="chrome-devtools">Chrome DevTools</option>
+                            <option value="vs-code">VS Code</option>
+                            <option value="figma">Figma</option>
+                            <option value="webpack">Webpack</option>
+                        </select>
+
+                        <button type="submit">Підписатися</button>
+
+                        <p><a href="/privacy-policy">Політика конфіденційності</a></p>
+                        <p>Ми не надсилаємо спам.</p>
+                    </form>
                 </div>
             </section>
         </main>
         <footer class="footer">
             <div class="container">
-                <a href="./index.html" class="footer-link"
-                    >Web<span class="footer-link-color">Studio</span></a
-                >
+                <div class="footer-logo">
+                    <a href="./index.html" class="logo-text"
+                        >DevTools <span class="footer-link-color">Hub</span></a
+                    >
+                </div>
                 <p class="footer-text">
-                    Increase the flow of customers and sales for your business with digital
-                    marketing & growth solutions.
+                    &copy; 2025 DevTools Hub. <br />
+                    Усі права захищені.
                 </p>
             </div>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="./js/script.js"></script>
     </body>
 </html>

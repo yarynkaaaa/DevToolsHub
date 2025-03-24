@@ -3,7 +3,9 @@ body {
     font-family: Arial, sans-serif;
     background: #f4f4f4;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 ul {
     list-style-type: none;
     margin: 0;
@@ -36,19 +38,6 @@ img {
     display: block;
 }
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
 
 .container {
     width: 1158px;
@@ -176,7 +165,7 @@ img {
 /* -----------------------------HERO-------------------- */
 .hero {
     padding-top: 118px;
-    padding-bottom: 160px;
+    padding-bottom: 120px;
     background: linear-gradient(135deg, #3a6c4c, #1f3324);
         color: white;
 }
@@ -207,7 +196,7 @@ img {
 .hub2-1{
     display: inline-block;
     justify-content: center;
-        padding: 5px 10px;
+        padding: 10px;
         border: 1px solid #222;
         background-color: #222;
         color: #fff;
@@ -216,8 +205,8 @@ img {
         font-family: "Poppins Bold";
 }
 .hub{
-display: inline-block;
-    padding: 3px 6px;
+    display: inline-block;
+    padding: 5px 6px;
     border: 2px solid #2f4f2f;
     background-color: #2f4f2f;
     color: #e8e8e8;
@@ -243,7 +232,7 @@ display: inline-block;
     display: block;
     padding: 25px;
     font-family: "Mulish ExtraBold";
-    font-size: 16px;
+    font-size: 18px;
     text-transform: uppercase;
     line-height: 1.5;
     letter-spacing: 0.04em;
@@ -266,111 +255,198 @@ display: inline-block;
             /* Кнопка опускається при натисканні */
         }
 
-/* -----------------------BENEFITS---------------------------------- */
+/* -----------------------SECTION 1---------------------------------- */
 
-.benefits {
-    padding-top: 120px;
-    padding-bottom: 120px;
+.information {
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
-
-.benefits-title {
-    /* display: none; */
-    font-weight: 700;
-    font-size: 36px;
+/* .information-container{
+    padding-left: 40px;
+    padding-right: 40px;
+} */
+.information-title {
+    font-family: "Manrope Regular", bold;
+    font-size: 1.7rem;
+    margin-bottom: 50px;
+    color: #2a472a;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
-    text-transform: capitalize;
-    color: #2e2f42;
 }
 
-.benefits-list {
+.information-list {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    gap: 14px;
 }
 
-.benefits-item {
-    flex-basis: calc((100% - 72px)/4);
+.information-item {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    flex: 1 1 calc(50% - 20px);
+    height: 175px;
+    gap: 10px;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-
-.benefits-subtitle {
+.information-item:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.information-subtitle {
+    font-family: "Mulish Bold";
+        color: #2a472a;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2e2f42;
     margin-bottom: 8px;
 }
-
-.benefits-item-text {
+.information-icon-left, 
+.information-icon-right{
+display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* .information-icon-left{
+    order: -1;
+} */
+.information-icon-right{
+order: 2;
+}
+.information-image-text{
+    order: 1;
+}
+.information-item-text {
+    font-family: "Manrope Regular", bold;
+        color: #222;
+        margin-top: 5px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+}
+/* ----------------------PROFESSION-------------------------- */
+.profession{
+    padding-top: 45px;
+    padding-bottom: 45px;
+    background-color: #2f4f2f;
+}
+/* .profession-container{
+    width: 100%;
+} */
+.profession-title{
+    font-family: "Manrope Light";
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 30px;
+        color: #f4f4f4;
+}
+.card-wrapper{
+    max-width: 1100px;
+    margin: 0 30px 35px;
+    padding: 20px 10px;
+    overflow: hidden;
+}
+.card-wrapper .swiper-pagination-bullet{
+    height: 14px;
+    width: 14px;
+    opacity: 0.6;
+    background: #f4f4f4;
+}
+.card-wrapper .swiper-pagination-bullet:active{
+    opacity: 1;
+}
+.card-wrapper .swiper-slide-button{
+    color: hwb(0 13% 87%);
+    margin-top: -35px;
 }
 
-.people-text {
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
 
-/* ----------------------TEAM-------------------------- */
-.team {
-    background-color: #f4f4fd;
-    padding-top: 120px;
-    padding-bottom: 120px;
-    margin-bottom: 120px;
-}
-
-.team-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-align: center;
-    text-transform: capitalize;
-    color: #2e2f42;
-    margin-bottom: 72px;
-}
-
-.team-list {
+.profession-link {
     display: flex;
-    gap: 24px;
+    flex-direction: column;
+    user-select: none;
+    background-color: #fff;
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    height: 450px;
+}
+.profession-link:hover{
+    box-shadow: 0 4px 8px rgba(135, 134, 134, 0.3);
+        transition: box-shadow 0.3s ease;
+}
+.profession-link:active{
+    cursor: grabbing;
+}
+.profession-image{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+    height: 200px;
+}
+.profession-subtitle{
+    font-family: "Poppins SemiBold";
+    color: #f4f4f4;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    margin: 16px 0 18px;
+    background-color: #2f4f2f;
+    width: fit-content;
+    border-radius: 5px;
+}
+.profession-item-text{
+    font-size: 1rem;
+    color: #222;
+    font-family: "Manrope Regular", bold;
+}
+.card-button{
+    height: 35px;
+    width: 35px;
+    color: #2f4f2f;
+    border-radius: 50%;
+    margin: 30px 0 5px;
+    background: none;
+    cursor: pointer;
+    border: 2px solid #2f4f2f;
+    transform: rotate(-45deg);
+    transition: 0.4s ease;
+    margin-top: auto;
+
+}
+.profession-link:hover .card-button{
+    color: #f4f4f4;
+    background-color: #2f4f2f;
+
+}
+.swiper-button-prev,
+.swiper-button-next{
+    width: 15px;
+    height: 15px;
+    color: #f4f4f4;
+    opacity: 0.5;
 }
 
-.team-item {
-    background-color: #FFFFFF;
-    border-radius: 0 0 4px 4px;
-    padding-bottom: 32px;
-    width: calc((100% - 48px) / 3);
+@media screen and (max-width: 768px) {
+    .card-wrapper{
+        max-width: 100%;
+        margin: 0 10px 25px;
+    }
+    .card-wrapper .swiper-slide-button{
+        display: block;
+    }
+    .profession-link {
+              height: 300px;
+          }
 }
-
-.team-image {
-    margin-bottom: 32px;
-}
-
-.team-people {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: #2e2f42;
-    margin-bottom: 8px;
-}
-
-.team-item-text {
-    font-weight: 400;
-    font-size: 16px;
-
-    /* line-height: 24px; */
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: #434455;
-}
-
 /* --------------PORTFOLIO---------------------- */
 .portfolio {
     padding-top: 120px;
@@ -434,27 +510,43 @@ display: inline-block;
 
 /* -----------FOOTER------------------ */
 .footer {
-    background-color: #2e2f42;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    background-color: #222;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
-
+.footer-logo{
+    display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0 auto;
+        margin-bottom: 38px;
+        color: #e8e8e8;
+}
+.logo-text{
+    font-family: "Poppins Bold";
+    color: #e8e8e8;
+}
 .footer-link {
     display: inline-block;
-    font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #4d5ae5;
+    color: #2f4f2f;
     margin-bottom: 16px;
 
 }
 
 .footer-link-color {
-    color: #f4f4fd;
+    display: inline-block;
+        padding: 3px 6px;
+        border: 2px solid #2f4f2f;
+        background-color: #2f4f2f;
+        color: #e8e8e8;
+        border-radius: 5px;
 }
+
 
 .footer-text {
     font-weight: 400;
